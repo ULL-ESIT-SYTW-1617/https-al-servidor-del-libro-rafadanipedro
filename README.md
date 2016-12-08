@@ -3,6 +3,9 @@
 [![Version NPM](https://img.shields.io/npm/v/gitbook-ssl-rafadanipedro.svg)](https://www.npmjs.com/package/gitbook-ssl-rafadanipedro)
 
 ## Tutorial paso a paso
+En el caso de esta práctica, no se debe instalar ni utilizar nada externo a este paquete, ya que se servirán las páginas siempre de manera segura.
+
+Por defecto, se utiliza el puerto 8080, el cual nos redirige al puerto que hayamos detallado en las preguntas de la consola cuando lo desplegamos.
 
 ### Requisitos previos
 
@@ -41,12 +44,10 @@ Ahora despliega con `gulp IaasPassportRafadanipedro`, y debería desplegar tu li
 
 Para que podemos almacenar los datos de los usuarios, necesitamos almacenarlos en Dropbox, por lo que necesitamos el token de neustra token. Entramos a https://www.dropbox.com/developers/apps, cremos una nueva aplicación y generamos un token. En la ronda de preguntas, introducimos el token de Dropbox.
 
-
 #### Uso con LocalStrategy
 En el caso de utilizar el registro con LocalStrategy, se nos creará por defecto un archivo `db.json` en el cuál contendrá los correos introducidos en la terminal y las contraseñas cifradas, las cuales son por defecto `1234`.
 
 La primera vez que iniciemos sesión, se requerirá que el usuario cambie la contraseña, ya que no admitimos `1234` como contraseña. Una vez cambiada, deberemos cerrar sesión accediendo a `/logout`. A continuación, ya podremos iniciar sesión sin problemas
-
 
 #### Cerrar sesión y cambio de contraseña
 
@@ -114,7 +115,7 @@ Para realizar la aplicación, se deben realizar una serie de pasos:
 * Cuando la aplicación ya ha sido creada, se puede acceder a la misma y utilizar el clientId y el clientSecret para poder realizar la autenticación mediante Oauth.
 
 ## Descripción de la práctica
- * [Gitbook de la práctica](https://crguezl.github.io/ull-esit-1617/practicas/practicapassportlocalsequelize.html)
+ * [Gitbook de la práctica](https://crguezl.github.io/ull-esit-1617/apuntes/ssl/)
 
 ## Páginas personales
 
