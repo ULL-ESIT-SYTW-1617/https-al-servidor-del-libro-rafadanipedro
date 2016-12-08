@@ -1,6 +1,6 @@
 {
   "name": "gitbook-ssl-rafadanipedro",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Plugin para desplegar practica en el servidor del IAAS usando SSL y el paquete gitbook-start-rafadanipedro",
   "scripts": {
     "build": "babel src -d dist"
