@@ -4,12 +4,9 @@ import * as pluginIaas from '../src'
 
 //Datos de prueba:
 
-const configPruebas = require('../iaasserver/config.json')
-
-
-
 async function testStart () {
-  //let configPruebas = await pluginIaas.config()
+  let configPruebas = await pluginIaas.config()
+  console.log(JSON.stringify(configPruebas, null, 2))
   await pluginIaas.start(configPruebas)
 }
 /*

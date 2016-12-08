@@ -42,6 +42,31 @@ const questions = [
     name: 'tipoAutenticacion',
     message: '¿De que manera quieres autenticarte?',
     choices: ['Github','Local','BaseDatos']
+  },
+  {
+    type: 'input',
+    name: 'commonName',
+    message: 'Escribe el nombre de su certificadora ssl'
+  },
+  {
+    type: 'input',
+    name: 'organization',
+    message: 'Escribe el nombre de la organizacion de su certificadora ssl'
+  },
+  {
+    type: 'input',
+    name: 'days',
+    message: 'Inserte el numero de dias para utilizar su certificado',
+    validate: days => {
+    if(days.match(/^\d+$/)) return true
+      return 'El numero de dias no es correcto, insertelo correctamente'
+    }
+  },
+  {
+    type: 'input',
+    name: 'puerto',
+    message: 'Inserte el puerto a utilizar para la conexión ssl',
+    default: '3443'
   }
 ]
 
