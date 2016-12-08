@@ -1,0 +1,278 @@
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: arial;
+}
+
+body {
+  background: url("/assets/libro3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#logo_bubook{
+  width: 290px;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+
+.login-form {
+  width: 350px;
+  padding: 40px 30px;
+  background: #eee;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 100%;
+  height: 50px;
+  border: none;
+  padding: 5px 7px 5px 15px;
+  background: #fff;
+  color: #666;
+  border: 2px solid #ddd;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+.form-control:focus, .form-control:focus + .fa {
+  border-color: #10CE88;
+  color: #10CE88;
+}
+
+.form-group .fa {
+  position: absolute;
+  right: 15px;
+  top: 17px;
+  color: #999;
+}
+
+.log-status.wrong-entry {
+  -moz-animation: wrong-log 0.3s;
+  -webkit-animation: wrong-log 0.3s;
+  animation: wrong-log 0.3s;
+}
+
+.log-status.wrong-entry .form-control, .wrong-entry .form-control + .fa {
+  border-color: #ed1c24;
+  color: #ed1c24;
+}
+
+.log-btn {
+  background: #404953;
+  display: inline-block;
+  width: 100%;
+  font-size: 16px;
+  height: 50px;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.log-btn:hover {
+  background: #6C7B8B;
+  display: inline-block;
+  width: 100%;
+  font-size: 16px;
+  height: 50px;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+#boton_github {
+  background: #000000;
+  margin-top: 10px;
+}
+
+#boton_github:hover {
+  background: #333a42;
+}
+
+.link {
+  text-decoration: none;
+  color: #8a8a8a;
+  float: right;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.link:hover {
+  text-decoration: underline;
+  color: #8C918F;
+}
+
+.alert {
+  display: none;
+  font-size: 12px;
+  color: #f00;
+  float: left;
+}
+
+@-moz-keyframes wrong-log {
+  0%, 100% {
+    left: 0px;
+  }
+  20% , 60% {
+    left: 15px;
+  }
+  40% , 80% {
+    left: -15px;
+  }
+}
+@-webkit-keyframes wrong-log {
+  0%, 100% {
+    left: 0px;
+  }
+  20% , 60% {
+    left: 15px;
+  }
+  40% , 80% {
+    left: -15px;
+  }
+}
+@keyframes wrong-log {
+  0%, 100% {
+    left: 0px;
+  }
+  20% , 60% {
+    left: 15px;
+  }
+  40% , 80% {
+    left: -15px;
+  }
+}
+
+#footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background:#000000;
+}
+
+.link_footer:link, .link_footer:visited {
+    color: white;
+    text-decoration: underline;
+    cursor: auto;
+    font-size: 12px;
+}
+
+.link_footer:link:active, .link_footer:visited:active {
+    color: white;
+    font-size: 12px;
+}
+
+.link_footer:hover{
+  color: grey;
+  font-size: 12px;
+}
+
+#footer {
+    width:100%;
+    text-align:center;
+}
+
+#izq {
+    float:left;
+    width:100px;
+    height: 20px;
+}
+
+#centro {
+    display: inline-block;
+    margin:0 auto;
+    width:100px;
+    height: 20px;
+}
+
+#der {
+    float:right;
+    width:100px;
+    height: 20px;
+}
+
+.error_center {
+  width: 350px;
+  padding: 20px 30px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.error_text{
+  color: white;
+  font-size: 300%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.error_text_2{
+  color: white;
+  font-size: 100%;
+}
+
+#texto_despliegue_2 {
+  margin-left :30px;
+}
+
+#logo_bubook_2 {
+  width: 500px;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+
+.login-form_2 {
+  width: 550px;
+  padding: 40px 30px;
+  background: #eee;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

@@ -1,0 +1,41 @@
+<% include ./layouts/head %>
+<div>
+
+    <% if (error) { %>
+<style>
+body {background-image: url("/assets/perro_malo.jpg");
+      background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+<div class="error_center">
+    <p class="error_text">¡No deberías estar aquí!</p>
+    <p class="error_text_2"><%=
+    (() => {
+        try {
+            return message
+        } catch(err) {
+            return 'No sabemos como has llegado hasta aquí, pero te pedimos amablemente que abandones esta página'
+        }
+    })()
+        %></p>
+</div>
+ <% } else{ %>
+ <style>
+body {background-image: url("/assets/perro_bueno.jpg");
+      background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+<div class="error_center">
+    <p class="error_text">¡No puedes leer este libro!</p>
+    <p class="error_text_2">El administrador no permite leer este GitBook si no perteneces a una determinada organización en GitHub. Contacta con él para resolver este problema.</p>
+</div>
+<% } %>
+
+</div>
+<% include ./layouts/footer %>

@@ -1,0 +1,24 @@
+<% include ./layouts/head %>
+<div class="login-form">
+     <img src="/assets/Logo_bubook.png" id="logo_bubook"></img>
+    <p>Cambiar contraseña para <%= email %></p>
+     <form action="/login/password" method="POST">
+         <div class="form-group ">
+       <input type="password" class="form-control" placeholder="Contraseña antigua" id="OldPass" name="OldPassword">
+       <i class="fa fa-unlock"></i>
+     </div>
+
+     <div class="form-group ">
+       <input type="password" class="form-control" name="NewPass" placeholder="Nueva contraseña" id="NewPass1">
+       <i class="fa fa-lock"></i>
+     </div>
+     <div class="form-group log-status">
+       <input type="password" class="form-control" name="ConfirmPass" placeholder="Repita contraseña" id="NewPass2">
+       <i class="fa fa-lock"></i>
+     </div>
+      <span class="alert">Datos erróneos</span>
+      <a class="link" href="#">¿Has olvidado la contraseña?</a>
+     <input type="submit" class="log-btn" id="boton_local" value="Cambiar contraseña"></input>
+     </form>
+   </div>
+<% include ./layouts/footer %>

@@ -1,0 +1,16 @@
+{
+  "username": "rafaherrero",
+  "privateKey": "/home/ubuntu/.ssh/id_rsa",
+  "directorioIaas": "/home/rafaherrero/miProyecto",
+  "host": "88.10.87.237",
+  "tipoAutenticacion": [
+    "BaseDatos"
+  ],
+  "BaseDatos": {
+    "lectores": [
+      "rafa@rafa.com",
+      "pedro@pedro.com",
+      "dani@dani.com"
+    ]
+  }
+}
