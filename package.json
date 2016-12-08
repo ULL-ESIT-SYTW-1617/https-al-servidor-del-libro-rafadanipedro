@@ -1,25 +1,25 @@
 {
-  "name": "plugin-iaas-database-rafadanipedro",
-  "version": "1.0.0",
-  "description": "Plugin para desplegar practica en el servidor del IAAS usando autenticacion con passport y el paquete gitbook-start-rafadanipedro",
+  "name": "gitbook-ssl-rafadanipedro",
+  "version": "0.0.1",
+  "description": "Plugin para desplegar practica en el servidor del IAAS usando SSL y el paquete gitbook-start-rafadanipedro",
   "scripts": {
     "build": "babel src -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ULL-ESIT-SYTW-1617/passport-y-localstrategy-rafadanipedro.git"
+    "url": "git+https://github.com/ULL-ESIT-SYTW-1617/https-al-servidor-del-libro-rafadanipedro.git"
   },
   "author": "rafadanipedro",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ULL-ESIT-SYTW-1617/passport-y-localstrategy-rafadanipedro/issues"
+    "url": "https://github.com/ULL-ESIT-SYTW-1617/https-al-servidor-del-libro-rafadanipedro/issues"
   },
   "main": "dist/index.js",
   "engines": {
     "node": "6.7.0",
     "npm": "3.10.3"
   },
-  "homepage": "https://github.com/ULL-ESIT-SYTW-1617/passport-y-localstrategy-rafadanipedro#readme",
+  "homepage": "https://github.com/ULL-ESIT-SYTW-1617/https-al-servidor-del-libro-rafadanipedro#readme",
   "dependencies": {
     "babel-runtime": "^6.18.0",
     "bcrypt-nodejs": "0.0.3",
