@@ -29,6 +29,7 @@
     "passport-github": "^1.1.0",
     "passport-local": "^1.0.0",
     "path": "^0.12.7",
+    "pem": "^1.9.4",
     "sequelize": "^3.27.0",
     "sqlite3": "^3.1.8"
   }

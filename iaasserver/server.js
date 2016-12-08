@@ -68,11 +68,16 @@ app.get('*', express.static('gh-pages'))
 
 app.use((req, res) => res.render('error', {error: true}))
 
-https.createServer({
-  key: fs.readFileSync('private.key'),
-  cert: fs.readFileSync('certificate.pem')
-}, app).listen(3443);
+const all = require('./https')
+
+all(config, config).then(keys => {
+  https.createServer({
+    key: keys.serviceKey,
+    cert: keys.certificate},
+  app)
+  .listen(config.puerto);
+})
 
 express().get('*', (req, res) => {
-  res.redirect(`https://${config.host}:3443${req.url}`)
+  res.redirect(`https://${config.host}:${config.puerto}${req.url}`)
 }).listen(8080);
