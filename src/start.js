@@ -10,8 +10,6 @@ export default async function start (config) {
   //Funcion que realiza un sftp para subir los archivos al servidor del iaas y además realiza una conexión ssh para dejar express abierto.
   let sftp = new SftpClient();
 
-  console.log(config)
-
   let dirLocal = path.resolve(__dirname, '../iaasserver')
 
   const connectConfig = {
@@ -23,8 +21,6 @@ export default async function start (config) {
 
   const serverConfig = JSON.stringify(config, undefined, 2)
 
-  console.log(serverConfig)
-
   fs.writeFileSync(path.resolve(__dirname, '../iaasserver/config.json'), serverConfig)
 
   try {
@@ -34,7 +30,7 @@ export default async function start (config) {
     await sftp.end()
   } catch(err) {
     console.error('Hubo un error intentando subir los ficheros')
-    console.log('subiendo '+dirLocal)
+    console.log(`Error al subir ${dirLocal}`)
     await sftp.end()
     throw err
   }
